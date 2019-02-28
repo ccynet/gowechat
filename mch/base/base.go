@@ -24,7 +24,7 @@ func (c *MchBase) PostXML(url string, req map[string]string, needSSL bool) (resp
 	if err = FormatMapToXML(bodyBuf, req); err != nil {
 		return
 	}
-
+	//fmt.Println("xml:", bodyBuf)
 	//需要ssl，就需要ssl client
 	client := c.HTTPClient
 	if needSSL {
@@ -32,6 +32,7 @@ func (c *MchBase) PostXML(url string, req map[string]string, needSSL bool) (resp
 	}
 
 	httpResp, err := client.Post(url, "text/xml; charset=utf-8", bodyBuf)
+	//httpResp, err := client.Post(url, "text/xml; charset=iso-8859-1", bodyBuf)
 	if err != nil {
 		return resp, err
 	}

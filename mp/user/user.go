@@ -3,7 +3,6 @@ package user
 import (
 	"encoding/json"
 	"fmt"
-
 	"github.com/yaotian/gowechat/mp/base"
 	"github.com/yaotian/gowechat/util"
 	"github.com/yaotian/gowechat/wxcontext"

@@ -78,13 +78,12 @@ func (c *Pay) GetJsAPIConfig(order OrderInput) (config *WxPayInfo, err error) {
 	result["nonceStr"] = nocestr
 	result["package"] = "prepay_id=" + prepayID
 	result["signType"] = "MD5"
-
 	sign := base.Sign(result, c.MchAPIKey, nil)
 	result["paySign"] = sign
 
 	config = new(WxPayInfo)
-	config.NonceStr = util.RandomStr(8)
-	config.TimeStamp = fmt.Sprint(time.Now().Unix())
+	config.NonceStr = nocestr
+	config.TimeStamp = timestamp
 	config.AppID = c.AppID
 	config.Package = "prepay_id=" + prepayID
 	config.SignType = "MD5"
@@ -147,6 +146,7 @@ func (c *Pay) createUnifiedOrderMap(order OrderInput) (input map[string]string) 
 	//sign
 	sign := base.Sign(input, c.MchAPIKey, nil)
 	input["sign"] = sign
+	fmt.Println(">>input:",input)
 	return
 }
 

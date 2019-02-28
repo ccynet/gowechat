@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/yaotian/gowechat/mp/oauth"
-	"github.com/yaotian/gowechat/mp/user"
-	"github.com/yaotian/gowechat/wxcontext"
+	"github.com/ccynet/gowechat/mp/oauth"
+	"github.com/ccynet/gowechat/mp/user"
+	"github.com/ccynet/gowechat/wxcontext"
 )
 
 //PageOAuthHandler 微信网页授权

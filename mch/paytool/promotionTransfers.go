@@ -3,8 +3,8 @@ package paytool
 import (
 	"errors"
 	"fmt"
-	"github.com/yaotian/gowechat/mch/base"
-	"github.com/yaotian/gowechat/util"
+	"github.com/ccynet/gowechat/mch/base"
+	"github.com/ccynet/gowechat/util"
 )
 
 //官方文档： https://pay.weixin.qq.com/wiki/doc/api/tools/mch_pay.php?chapter=14_2

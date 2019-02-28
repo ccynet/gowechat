@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yaotian/gowechat"
-	"github.com/yaotian/gowechat/mp/message"
-	"github.com/yaotian/gowechat/wxcontext"
+	"github.com/ccynet/gowechat"
+	"github.com/ccynet/gowechat/mp/message"
+	"github.com/ccynet/gowechat/wxcontext"
 )
 
 func main() {

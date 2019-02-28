@@ -3,9 +3,9 @@ package template
 import (
 	"encoding/json"
 
-	"github.com/yaotian/gowechat/mp/base"
-	"github.com/yaotian/gowechat/util"
-	"github.com/yaotian/gowechat/wxcontext"
+	"github.com/ccynet/gowechat/mp/base"
+	"github.com/ccynet/gowechat/util"
+	"github.com/ccynet/gowechat/wxcontext"
 )
 
 const (
